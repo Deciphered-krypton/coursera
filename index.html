@@ -17,10 +17,11 @@
 
 		#heading{
 			text-align: center;
-			background-color: red;
+			padding-top: 15px;
 		}
 		.country{
-			background-color: green;
+			background-color: grey;
+			border: 5px solid black;
 		}
 		.country-countainer{
 			padding-left: 10px;
@@ -28,11 +29,29 @@
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
+		.country_name{
+			float: right;
+			padding: 5px 10px 5px 10px;
+			border-left: 5px solid black;
+			border-bottom: 5px solid black;
+		}
+		.country_description{
+			clear: right;
+			padding: 10px;
+		}
+		#india .country_name{
+			background-color: rgb(85, 161, 88);
+		}
+		#japan .country_name{
+			background-color: rgb(194, 76, 68);
+		}
+		#germany .country_name{
+			background-color: rgb(219, 215, 105);
+		}
 
-		@media (min-width: 1200px){
+		@media (min-width: 992px){
 			.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-3, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
 				float: left;
-				border: 2px, black;
 			}
 			.col-lg-1 {
 				width: 8.33%;
@@ -71,7 +90,7 @@
 				width: 100%;
 			}
 		}
-		@media (min-width: 950px) and (max-width: 1199px){
+		@media (min-width: 768px) and (max-width: 991px){
 			.col-md-1, .col-md-2, .col-md-3, .col-md-3, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
 				float: left;
 			}
@@ -112,6 +131,11 @@
 				width: 100%;
 			}
 		}
+		@media (max-width: 767px;){
+			.col-sm{
+				width: 100%;
+			}
+		}
 
 		
 	</style>
@@ -124,26 +148,26 @@
 		</div>
 		<div class="row">
 			<div class="country-countainer col-lg-4 col-md-6 col-sm">
-				<div class="country">
-					<h3>India</h3>
-					<p>
-						This is India.
+				<div class="country" id="india">
+					<h3 class="country_name">India</h3>
+					<p class="country_description">
+						India, officially the Republic of India, is a country in South Asia. It is the second-most populous country, the seventh-largest country by land area, and the most populous democracy in the world.
 					</p>
 				</div>
 			</div>
 			<div class="country-countainer col-lg-4 col-md-6 col-sm">
-				<div class="country">
-					<h3>Japan</h3>
-					<p>
-						This is Japan.
+				<div class="country" id="japan">
+					<h3 class="country_name">Japan</h3>
+					<p class="country_description">
+						Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south.
 					</p>
 				</div>
 			</div>
 			<div class="country-countainer col-lg-4 col-md-12 col-sm">
-				<div class="country">
-					<h3>Germany</h3>
-					<p>
-						This is Germany.
+				<div class="country" id="germany">
+					<h3 class="country_name">Germany</h3>
+					<p class="country_description">
+						Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.
 					</p>
 				</div>
 			</div>
